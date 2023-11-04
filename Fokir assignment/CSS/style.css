@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clr {
+    clear: both;
+}
+
+.nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav .logo {
+    color: #ff305b;
+    float: left;
+    padding: 10px;
+}
+
+.nav .links ul {
+    color: #fff;
+    float: right;
+    width: 50%;
+    margin-left: auto;
+}
+
+.nav .links ul li {
+    float: left;
+    padding: 15px;
+}
+
+.nav .links ul li a {
+    transition: color 0.5s;
+}
+
+.nav .links ul li a:hover {
+    color: #ff305b;
+}
+
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero\ img.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header .header-content h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ff305b;
+}
+
+.header .header-content h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.header .header-content h4 {
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.header .header-content h4::after {
+    content: " |";
+    animation-name: typing;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "D|";
+    }
+
+    2% {
+        content: "De|";
+    }
+
+    4% {
+        content: "Des|";
+    }
+
+    6% {
+        content: "Desi|";
+    }
+
+    8% {
+        content: "Desig|";
+    }
+
+    10% {
+        content: "Design|";
+    }
+
+    12% {
+        content: "Designe|";
+    }
+
+    14% {
+        content: "Designer|";
+    }
+
+    16% {
+        content: "Designer |";
+    }
+
+    18% {
+        content: "Designer|";
+    }
+
+    20% {
+        content: "Designe|";
+    }
+
+    22% {
+        content: "Design|";
+    }
+
+    24% {
+        content: "Desig|";
+    }
+
+    26% {
+        content: "Desi|";
+    }
+
+    28% {
+        content: "Des|";
+    }
+
+    30% {
+        content: "De|";
+    }
+
+    32% {
+        content: "D|";
+    }
+
+    34% {
+        content: "|";
+    }
+
+    36% {
+        content: "D|";
+    }
+
+    38% {
+        content: "De|";
+    }
+
+    40% {
+        content: "Des|";
+    }
+
+    42% {
+        content: "Desi|";
+    }
+
+    44% {
+        content: "Desig|";
+    }
+
+    46% {
+        content: "Design|";
+    }
+
+    48% {
+        content: "Designe|";
+    }
+
+    50% {
+        content: "Designer|";
+    }
+
+    52% {
+        content: "Designer |";
+    }
+
+    54% {
+        content: "Designer|";
+    }
+
+    56% {
+        content: "Designe|";
+    }
+
+    58% {
+        content: "Design|";
+    }
+
+    60% {
+        content: "Desig|";
+    }
+
+    62% {
+        content: "Desi|";
+    }
+
+    64% {
+        content: "Des|";
+    }
+
+    66% {
+        content: "De|";
+    }
+
+    68% {
+        content: "D|";
+    }
+
+    70% {
+        content: "|";
+    }
+
+    72% {
+        content: "D";
+    }
+
+    74% {
+        content: "De|";
+    }
+
+    76% {
+        content: "Dev|";
+    }
+
+    78% {
+        content: "Deve|";
+    }
+
+    80% {
+        content: "Devel|";
+    }
+
+    82% {
+        content: "Develo|";
+    }
+
+    84% {
+        content: "Develop|";
+    }
+
+    86% {
+        content: "Develope|";
+    }
+
+    88% {
+        content: "Developer|";
+    }
+
+    90% {
+        content: "Develope|";
+    }
+
+    92% {
+        content: "Develop|";
+    }
+
+    94% {
+        content: "Develo|";
+    }
+
+    96% {
+        content: "Devel|";
+    }
+
+    98% {
+        content: "Deve|";
+    }
+
+    100% {
+        content: "Dev|";
+    }
+
+    102% {
+        content: "De|";
+    }
+
+    104% {
+        content: "D|";
+    }
+
+    106% {
+        content: "|";
+    }
+}
+
+
+.about .border {
+    border: #555 8px solid;
+    border-radius: 8px;
+
+}
+
+.about-img {
+    width: 40%;
+    float: left;
+    padding: 40px;
+}
+
+.about .about-img .img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.about .about-img .img:hover .layer {
+    transform: translateY(0%);
+}
+
+.about .about-img .layer {
+    position: absolute;
+    top: 0%;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    transform: translateY(110%);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.7s;
+    border-radius: 5px;
+}
+
+.about .about-img .layer .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.about .about-img .layer .icons i {
+    padding: 10px;
+    transition: color 0.5s;
+}
+
+.about .about-img .layer .icons i:hover {
+    color: #ff305b;
+    cursor: pointer;
+}
+
+.about .about-img img {
+    width: 100%;
+}
+
+.about .about-content {
+    padding-top: 60px;
+    width: 60%;
+    float: left;
+}
+
+.about .about-content h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+}
+
+.about .about-content h2::before {
+    content: "";
+    background-color: #ff305b;
+    width: 5px;
+    height: 27px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.about .about-content p {
+    color: #555;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed 1px #999;
+}
+
+.about .about-content ul {
+    overflow: auto;
+}
+
+.about .about-content ul li {
+    color: #333;
+    font-size: 18px;
+    width: 40%;
+    float: left;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.about .about-content ul li span {
+    font-weight: bold;
+}
+
+.about .about-content button {
+    border: none;
+    padding: 15px 25px;
+    background-color: #ff305b;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.5s;
+}
+
+.about .about-content button:hover {
+    background-color: #EC2403;
+}
+
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .service {
+    flex: 1 1 300px;
+    margin: 0 10px 20px;
+    text-align: center;
+}
+
+.services .service img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.services .service h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* kml mn hna */
